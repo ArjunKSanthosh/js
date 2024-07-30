@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/makoto-shinkai-anime-aesthetic-laptop-3eop3d65vpmswgaa\ \(2\).jpg);
+    object-fit: cover;
+    background-size: cover;
+}
