@@ -8,8 +8,8 @@ function fetchData(){
         str=``
         data.map((dt)=>{
             str+=`<div class="card">
-            <h3>${dt.userId}</h3>
-            <h3>${dt.id}</h3>
+            <h3>USER ID:${dt.userId}</h3>
+            <h3>ID:${dt.id}</h3>
             <h3>${dt.title}</h3>
         </div>`
         })
