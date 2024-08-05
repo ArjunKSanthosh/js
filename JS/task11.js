@@ -8,20 +8,27 @@ function fetchData(){
         str=``
         data.map((dt)=>{
             str+=`<div class="card">
-            <h3>ID:${dt.id}</h3>
-            <h3>NAME:${dt.name}</h3>
-            <h3>EMAIL:${dt.email}</h3>
-            <div class="main">
-            <div class="m1">
-                <img src="${dt.url}" alt="">
-            </div>
-            <div class="m2">
-                <img src="${dt.thumbnailUrl}" alt="">
-            </div>
-            </div>
-            
-            
-        </div>`
+                    <h5><i>${dt.id}</i></h5>
+                    <h3>${dt.name}</h3>
+                    <p>Username: ${dt.username}</p>
+                    <p>Email: ${dt.email}</p>
+                    <div class="add">
+                        <h4>Address</h4>
+                        <p>Street: ${dt.address.street}</p>
+                        <p>Suite: ${dt.address.suite}</p>
+                        <p>City: ${dt.address.city}</p>
+                        <p>Zipcode:${dt.address.zipcode}</p>
+                        <p>lat: ${dt.address.geo.lat}  lon: ${dt.address.geo.lng}</p>
+                    </div>
+                    <p>Phone: ${dt.phone}</p>
+                    <p>Website: ${dt.website}</p>
+                    <div class="comp">
+                        <h4>Company</h4>
+                        <p>${dt.company.name}</p>
+                        <p>${dt.company.catchPhrase}</p>
+                        <p>${dt.company.bs}</p>
+                    </div>
+                </div>`
         })
         document.getElementById("list").innerHTML=str
     })
